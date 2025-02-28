@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apoyo Rural</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background: #f5f5f5; }
-        header { background: #2d572c; color: white; padding: 15px 0; }
-        nav { display: flex; justify-content: center; gap: 20px; padding: 10px; }
-        nav a { color: white; text-decoration: none; font-size: 18px; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #2d572c; color: white; text-align: center; padding: 20px 0; position: relative; }
+        nav { display: flex; justify-content: center; gap: 20px; padding: 15px; }
+        nav a { color: white; text-decoration: none; font-size: 18px; font-weight: bold; transition: 0.3s; }
         nav a:hover { text-decoration: underline; }
-        .container { padding: 20px; }
-        img.logo { max-width: 250px; margin-top: 10px; }
-        footer { background: #2d572c; color: white; padding: 10px; margin-top: 20px; }
-        form { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
-        button { background: green; color: white; padding: 10px; border: none; cursor: pointer; border-radius: 5px; }
-        button:hover { background: darkgreen; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; text-align: center; }
+        img.logo { max-width: 200px; margin: 20px auto; display: block; }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?rural,landscape') center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 36px; }
+        .hero p { font-size: 20px; margin-bottom: 20px; }
+        button { background: #e63946; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; }
+        button:hover { background: #c62828; }
+        section { background: white; padding: 40px; margin: 20px 0; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2d572c; }
+        .section-img { width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px; }
+        footer { background: #2d572c; color: white; text-align: center; padding: 15px; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -32,31 +41,35 @@
         </nav>
     </header>
     
+    <div class="hero">
+        <h1>Transformamos la vida en comunidades rurales</h1>
+        <p>Únete a nuestra causa para generar un cambio real</p>
+        <button onclick="location.href='#colabora'">Quiero Colaborar</button>
+    </div>
+    
     <div class="container">
-        <section id="inicio">
-            <h1>Bienvenidos a Apoyo Rural</h1>
-            <p>Trabajamos por el bienestar de las comunidades rurales en Galicia.</p>
-        </section>
-        
         <section id="quienes-somos">
+            <img src="https://source.unsplash.com/800x400/?farm,people" alt="Quiénes Somos" class="section-img">
             <h2>Quiénes Somos</h2>
             <p>Somos una ONG comprometida con el desarrollo y apoyo a comunidades rurales.</p>
         </section>
         
         <section id="proyectos">
+            <img src="https://source.unsplash.com/800x400/?agriculture,teamwork" alt="Nuestros Proyectos" class="section-img">
             <h2>Nuestros Proyectos</h2>
             <p>Explora nuestras iniciativas para fortalecer el entorno rural.</p>
         </section>
         
         <section id="colabora">
+            <img src="https://source.unsplash.com/800x400/?volunteer,help" alt="Colabora con Nosotros" class="section-img">
             <h2>Cómo Puedes Colaborar</h2>
             <p>Hazte voluntario o contribuye con donaciones para ayudar a quienes más lo necesitan.</p>
+            <button onclick="location.href='https://www.facebook.com/apoyorural'">Síguenos en Facebook</button>
         </section>
         
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Email: <a href="mailto:asociacion.apoyorural@gmail.com">asociacion.apoyorural@gmail.com</a></p>
-            <p>Síguenos en <a href="https://www.facebook.com/apoyorural" target="_blank">Facebook</a></p>
         </section>
         
         <section id="ayuda">
@@ -66,7 +79,7 @@
                 <input type="text" name="nombre" placeholder="Tu Nombre" required>
                 <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                 <textarea name="mensaje" rows="5" placeholder="Explica tu situación o la de alguien que necesite ayuda" required></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="submit">Enviar</button>
             </form>
         </section>
     </div>
@@ -76,5 +89,3 @@
     </footer>
 </body>
 </html>
-
-
