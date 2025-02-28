@@ -48,23 +48,27 @@
             display: flex;
             max-width: 1200px;
             margin: 40px auto;
-            gap: 0;
-            align-items: stretch;
-            padding: 0;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
         }
         .content-image {
             width: 50%;
             height: auto;
-            display: block;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
         }
         .content-box {
             width: 50%;
             background: white;
             padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
             justify-content: center;
-            box-sizing: border-box;
+            height: 100%;
         }
         h2 { color: #2d572c; }
         footer { background: #2d572c; color: white; text-align: center; padding: 20px; margin-top: 40px; }
@@ -86,7 +90,7 @@
     </header>
     
     <div class="content-section">
-        <img src="mujer rural-kLKI-U1801042846337fBC-1248x770@Diario Montanes.jpg">
+        <img src="mujer rural-kLKI-U1801042846337fBC-1248x770@Diario Montanes.jpg" alt="Realidad del rural" class="content-image">
         <div class="content-box">
             <h2>La realidad del rural: soledad y esfuerzo diario</h2>
             <p>En muchos rincones de Galicia, la vida rural es sinónimo de lucha diaria. Personas mayores, muchas veces solas, enfrentan jornadas interminables en el campo, en los huertos y con el ganado, porque no hay otra opción. Sin relevo generacional ni apoyos suficientes, continúan trabajando la tierra con sus propias manos, desafiando el tiempo y el desgaste de los años.</p>
