@@ -44,16 +44,33 @@
             background: yellow;
             color: black;
         }
-        .container { max-width: 1200px; margin: auto; padding: 20px; text-align: center; }
-        section { background: white; padding: 50px; margin: 40px 0; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #2d572c; }
-        .section-img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        .content-section {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+        .content-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content-box {
+            width: 50%;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2d572c; }
         footer { background: #2d572c; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
     <header>
-        <img src="portada facebook.png" alt="Cabecera" class="header-image">
+        <img src="images/imagenportada facebook.png" alt="Cabecera" class="header-image">
         <div class="nav-container">
             <nav>
                 <a href="#inicio">Inicio</a>
@@ -66,42 +83,16 @@
         </div>
     </header>
     
-    <div class="container">
-        <section id="quienes-somos">
-            <img src="images/quienes-somos.jpg" alt="Quiénes Somos" class="section-img">
-            <h2>Quiénes Somos</h2>
-            <p>Somos una ONG comprometida con el desarrollo y apoyo a comunidades rurales.</p>
-        </section>
-        
-        <section id="proyectos">
-            <img src="images/proyectos.jpg" alt="Nuestros Proyectos" class="section-img">
-            <h2>Nuestros Proyectos</h2>
-            <p>Explora nuestras iniciativas para fortalecer el entorno rural.</p>
-        </section>
-        
-        <section id="colabora">
-            <img src="images/colabora.jpg" alt="Colabora con Nosotros" class="section-img">
-            <h2>Cómo Puedes Colaborar</h2>
-            <p>Hazte voluntario o contribuye con donaciones para ayudar a quienes más lo necesitan.</p>
-        </section>
-        
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Email: <a href="mailto:asociacion.apoyorural@gmail.com">asociacion.apoyorural@gmail.com</a></p>
-            <p><a href="https://www.facebook.com/apoyorural" target="_blank">Síguenos en Facebook</a></p>
-        </section>
-        
-        <section id="ayuda">
-            <img src="images/ayuda.jpg" alt="Solicita Ayuda" class="section-img">
-            <h2>Solicita Ayuda</h2>
-            <p>Si necesitas apoyo o conoces un caso que lo requiera, por favor completa el siguiente formulario:</p>
-            <form action="mailto:asociacion.apoyorural@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                <textarea name="mensaje" rows="5" placeholder="Explica tu situación o la de alguien que necesite ayuda" required></textarea>
-                <button type="submit" class="submit">Enviar</button>
-            </form>
-        </section>
+    <div class="content-section">
+        <img src="images/realidad-rural.jpg" alt="Realidad del rural" class="content-image">
+        <div class="content-box">
+            <h2>La realidad del rural: soledad y esfuerzo diario</h2>
+            <p>En muchos rincones de Galicia, la vida rural es sinónimo de lucha diaria. Personas mayores, muchas veces solas, enfrentan jornadas interminables en el campo, en los huertos y con el ganado, porque no hay otra opción. Sin relevo generacional ni apoyos suficientes, continúan trabajando la tierra con sus propias manos, desafiando el tiempo y el desgaste de los años.</p>
+            <p>La soledad pesa tanto como la carga del día a día. Sin servicios cercanos, sin transporte accesible, sin alguien que les eche una mano, muchas de estas personas viven aisladas, con la única compañía de su esfuerzo y el recuerdo de tiempos en los que el rural estaba vivo.</p>
+            <p>En Apoyo Rural, no queremos mirar hacia otro lado. Creemos en un rural más humano, donde la experiencia y la dedicación de nuestros mayores sean valoradas y donde nadie tenga que elegir entre trabajar sin descanso o quedarse sin lo esencial. Por eso, trabajamos para ofrecer apoyo, generar oportunidades y construir una red solidaria que devuelva vida y dignidad al campo.</p>
+            <p><strong>Porque el rural no debe ser sinónimo de olvido.</strong></p>
+            <p>Únete a nuestra causa y hagamos juntos un cambio real.</p>
+        </div>
     </div>
     
     <footer>
